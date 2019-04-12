@@ -19,3 +19,7 @@ test('firstNumber and secondNumber are NaN',()=>{
 test('firstNumber and secondNumber are not real numbers', ()=>{
     expect(summation('a','a')).toEqual('Invalid input(s)');
 });
+
+test('firstNumber and secondNumber are Infinity',()=>{
+    expect(summation(Infinity,Infinity)).toEqual('Invalid input(s)')
+});
