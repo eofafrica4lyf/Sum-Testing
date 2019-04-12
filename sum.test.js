@@ -12,6 +12,10 @@ test('adds 0.1 + 0.2 to equal 3(Rounding Floats)', ()=>{
     expect(summation(0.1,0.2)).toBeCloseTo(0.3);
 });
 
+test('adds 0.1 + 0.2 to equal 3(Rounding Floats)', ()=>{
+    expect(summation(0.2,0.1)).toBeCloseTo(0.3);
+});
+
 test('firstNumber and secondNumber are NaN',()=>{
     expect(summation(NaN,NaN)).toEqual('Invalid input(s)')
 });
